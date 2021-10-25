@@ -1,0 +1,13 @@
+.full-page-block {
+  scroll-snap-type: y mandatory;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #00a8ff;
+  border: 2px solid #e84118;
+}
+
+.full-page-block * {
+  scroll-snap-align: start;
+}
