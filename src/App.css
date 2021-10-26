@@ -11,6 +11,8 @@
   box-sizing: inherit;
   overflow-x: hidden;
 }
+html {
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -18,13 +20,6 @@ body {
   line-height: 1.5;
   font-weight: 500;
   color: #f5f6fa;
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
 }
 
 .page-wrapper {
@@ -35,6 +30,14 @@ body::-webkit-scrollbar {
   position: relative;
   top: 70px;
   width: 100%;
-  height: calc(100%-70px);
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.page-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
