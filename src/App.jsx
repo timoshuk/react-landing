@@ -9,7 +9,7 @@ function App() {
       <Header />
       <div className="page-content">
         <FullPageBlock>
-          <h2>Block 1</h2>
+          <h2>Block 111111</h2>
         </FullPageBlock>
         <FullPageBlock>
           <h2>Block 2</h2>
